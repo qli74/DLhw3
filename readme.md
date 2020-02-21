@@ -11,6 +11,10 @@ cd ParlAI
 python -m parlai.scripts.train_model -mf ../model/myhred -t moviedialog:Task:4 -m hred -df ./Training_dict -stim 10 -ttim 100 -bs 80 -bms 20 -lr 0.001
 #If you don't want to wait too long, just kill it when it starts running eval
 ```
+**or download the model**
+* unzip the files in ./model: myhred.zip.001 & myhred.zip.002
+* change the path in codes
+
 test it:
 ```
 python -m parlai.scripts.interactive -mf ../model/myhred
